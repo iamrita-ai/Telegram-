@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: telegram-music-bot
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: API_ID
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: API_HASH
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: YT_API_KEY
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: MONGO_URI
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: OWNER_ID
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: CHANNEL_ID
+        value: <SET_IN_RENDER_DASHBOARD>
+      - key: LOG_CHANNEL_ID
+        value: <SET_IN_RENDER_DASHBOARD>

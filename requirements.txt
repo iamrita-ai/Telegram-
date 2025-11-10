@@ -1,0 +1,7 @@
+pyrogram==2.0.52
+tgcrypto
+aiohttp==3.8.4
+motor==4.3.0
+yt-dlp==2025.10.25
+python-dotenv==1.0.0
+pydantic==1.10.11
